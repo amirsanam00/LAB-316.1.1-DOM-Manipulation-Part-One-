@@ -15,7 +15,7 @@
     margin: 0;
     display: grid;
     grid-template-rows: 3rem auto;
-    color: rgb(255, 255, 255);
+    color: white;
   }
   
   .flex-ctr {

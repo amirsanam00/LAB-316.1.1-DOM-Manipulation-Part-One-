@@ -16,7 +16,7 @@ mainEl.classList.add("flex-ctr");
 //Part 2: Creating a Menu Bar --- Next, create a blank menu bar that we can use to later add some interactivity to the page:
 
 // 1. Select and cache the <nav id="top-menu"> element in a variable named topMenuEl.
-const topMenuEl = document.querySelector("top-menu");
+const topMenuEl = document.querySelector("#top-menu");
 
 // 2. Set the height of the topMenuEl element to be 100%.
 topMenuEl.style.height = "100%";
@@ -40,14 +40,13 @@ var menuLinks = [
 
 // 1. Iterate over the entire menuLinks array and for each "link" object:
 
-var topMenuEl = document.getElementById("top-menu");
 menuLinks.forEach (link => {
  // 2. Create an <a> element.
- var a = document.createElement('a');
+ var newLink = document.createElement('a');
  // 3.  On the new element, add an href attribute with its value set to the href property of the "link" object.
- a.setAttribute(`href`, link.href);
+ newLink.setAttribute(`href`, link.href);
  // 4. Set the new element's content to the value of the text property of the "link" object.
- a.textContent = link.text;
+ newLink.textContent = link.text;
  // 5. Append the new element to the topMenuEl element.
- topMenuEl.appendChild(a);
+ topMenuEl.appendChild(newLink);
 });
